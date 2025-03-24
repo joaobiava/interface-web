@@ -1,0 +1,16 @@
+body{
+    font-family: sans-serif;
+}
+
+.captalize{
+    text-transform: capitalize;
+}
+
+.contato{
+    text-align: end;
+}
+
+p{
+    text-indent: 40px;
+    font-size: 12pt;
+}
