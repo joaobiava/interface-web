@@ -1,0 +1,49 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1{
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    height: 70px;
+}
+
+.captalize{
+    text-transform: capitalize;
+}
+
+.contato{
+    text-align: end;
+    margin-left: 70%;
+}
+
+.geneba{
+    text-indent: 20px;
+    font-size: 12pt;
+}
+
+a:link{
+    color: cadetblue;
+}
+a:hover{
+    background-color: chartreuse;
+    font-size: 20px;
+}
+a:active{
+    font-size: larger;
+}
+
+ol li{
+    list-style: georgian;
+}
+ul li{
+    list-style: circle;
+}
+
+hr{
+    border-color: aqua;
+    block-size: 3px;
+    background-color: black;
+}
