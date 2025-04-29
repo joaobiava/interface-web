@@ -1,13 +1,31 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+html{
+    font-size: 62.5%;
 }
 
-h1{
+header h1{
+    font-size: 2.4em;
     border: 2px solid black;
     text-align: center;
-    margin: auto;
-    height: 70px;
+    margin: 10px;
+    padding: 20px;
+}
+header p{
+    background-color: rgba(14, 79, 15, 0.3);
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+p{
+    font-size: 1.6em;
+}
+h2{
+    font-size: 2em;
 }
 
 .captalize{
@@ -17,11 +35,13 @@ h1{
 .contato{
     text-align: end;
     margin-left: 70%;
+    z-index: 2;
+    background-color: rgba(14, 79, 15, 0.3);;
 }
 
 .geneba{
     text-indent: 20px;
-    font-size: 12pt;
+    font-size: 1.6em;
 }
 
 a:link{
@@ -29,7 +49,7 @@ a:link{
 }
 a:hover{
     background-color: chartreuse;
-    font-size: 20px;
+    font-size: 2em;
 }
 a:active{
     font-size: larger;
@@ -37,13 +57,23 @@ a:active{
 
 ol li{
     list-style: georgian;
+    font-size: 1.6em;
 }
 ul li{
     list-style: circle;
+    font-size: 1.6em;
 }
 
 hr{
     border-color: aqua;
     block-size: 3px;
     background-color: black;
+}
+
+.main{
+    display: flex;
+    height: 300px;
+    overflow: scroll;
+    flex-direction: column;
+    background-color: rgba(14, 79, 15, 0.3);;
 }

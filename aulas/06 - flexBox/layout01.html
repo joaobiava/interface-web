@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>fleBox pt-1</title>
+    <style>
+        .flexbox{
+            height: 300px;
+            border: 3px solid black;
+            margin-bottom: 20px;
+            display: flex; /* como padrão ele deixa o elemnto principal como linhas e os elementos filhos como coluna*/
+            /*flex-direction: column; deixa os elementos como o container em linha 
+            flex-direction: row-reverse; espelha a linha ou coluna*/
+
+        }
+        .flexbox div{
+            border: 3px solid blue;
+            width: 200px;
+            margin: 10px;
+        }
+        .flex-container2 div{
+            width: 40px;
+            margin: 0;
+        }
+        .flex-container3 div{
+            width: 40px;
+            margin: 0;
+        }
+        .flex-container1{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .flex-container2{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .flex-container3{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: end;
+        }
+        .flex-container4 div{
+            width: 300px;
+        }
+        .flex-container4{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox flex-container1">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>
+    <div class="flexbox flex-container2">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>
+    <div class="flexbox flex-container3">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>
+    <div class="flexbox flex-container4">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>
+</body>
+</html>
