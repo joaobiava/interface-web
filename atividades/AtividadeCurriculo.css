@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Kanchenjunga:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 html{
     font-size: 62.5%;
 }
 
 header h1{
+    font-family: Coral Pixels;
     font-size: 2.4em;
     border: 2px solid black;
     text-align: center;
@@ -14,7 +17,7 @@ header p{
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Kanchenjunga;
     background-image: url(image.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,8 +37,6 @@ h2{
 
 .contato{
     text-align: end;
-    margin-left: 70%;
-    z-index: 2;
     background-color: rgba(14, 79, 15, 0.3);;
 }
 
@@ -45,7 +46,7 @@ h2{
 }
 
 a:link{
-    color: cadetblue;
+    color: royalblue;
 }
 a:hover{
     background-color: chartreuse;
@@ -65,7 +66,7 @@ ul li{
 }
 
 hr{
-    border-color: aqua;
+    border-color: black;
     block-size: 3px;
     background-color: black;
 }
