@@ -1,80 +1,190 @@
 @import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Kanchenjunga:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-html{
+
+html {
+    background-image: url(/atividadeCurriculo/image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+:root {
     font-size: 62.5%;
 }
 
-header h1{
-    font-family: Coral Pixels;
-    font-size: 2.4em;
-    border: 2px solid black;
+body {
+    font-family: 'Kanchenjunga', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    line-height: 1.6;
+}
+
+header {
+    grid-area: header;
+    background-color: rgba(14, 79, 15, 0.7);
+    color: white;
+    padding: 2rem;
     text-align: center;
-    margin: 10px;
-    padding: 20px;
-}
-header p{
-    background-color: rgba(14, 79, 15, 0.3);
 }
 
-body{
-    font-family: Kanchenjunga;
-    background-image: url(image.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+header h1 {
+    font-family: 'Coral Pixels', cursive;
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 0;
 }
 
-p{
-    font-size: 1.6em;
-}
-h2{
-    font-size: 2em;
+.main-tudo {
+    grid-area: main;
+    padding: 2rem;
+    max-width: 100%;
+    overflow-y: auto;
 }
 
-.captalize{
+.main {
+    background-color: rgba(240, 232, 232, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgba(14, 79, 15, 0.7);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+h2 {
+    font-size: 2rem;
+    color: #0e4f0e;
+    border-bottom: 2px solid rgba(14, 79, 15, 0.3);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin: 1rem 0 0.5rem 0;
+    color: #333;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+}
+
+ul, ol {
+    padding-left: 2rem;
+}
+
+li {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.captalize {
     text-transform: capitalize;
 }
 
-.contato{
-    text-align: end;
-    background-color: rgba(14, 79, 15, 0.3);;
+.contato {
+    text-align: center;
+    margin: 0.5rem 0;
 }
 
-.geneba{
-    text-indent: 20px;
-    font-size: 1.6em;
+.contato a {
+    color: white;
+    text-decoration: none;
 }
 
-a:link{
-    color: royalblue;
-}
-a:hover{
-    background-color: chartreuse;
-    font-size: 2em;
-}
-a:active{
-    font-size: larger;
+.contato a:hover {
+    text-decoration: underline;
 }
 
-ol li{
-    list-style: georgian;
-    font-size: 1.6em;
-}
-ul li{
-    list-style: circle;
-    font-size: 1.6em;
-}
-
-hr{
-    border-color: black;
-    block-size: 3px;
-    background-color: black;
+@media screen and (min-width: 768px) {
+    .main {
+        padding: 3rem;
+        max-width: 90%;
+    }
+    
+    header h1 {
+        font-size: 3.2rem;
+    }
 }
 
-.main{
-    display: flex;
-    height: 300px;
-    overflow: scroll;
-    flex-direction: column;
-    background-color: rgba(14, 79, 15, 0.3);;
+@media screen and (min-width: 1024px) {
+    .main-tudo {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        padding: 2rem 5%;
+    }
+    
+    .main {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+    
+    h2:first-child { 
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    ul:nth-of-type(1) { 
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    h2:nth-of-type(2) { 
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    ol {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    h2:nth-of-type(3) { 
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    ul:nth-of-type(2) { 
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    h2:nth-of-type(4) {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    ul:nth-of-type(3) {
+        grid-column: 2;
+        grid-row: 4;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-tudo {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .main {
+        padding: 4rem;
+    }
 }
