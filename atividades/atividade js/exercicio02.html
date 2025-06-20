@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let idade = Number(prompt("qual a sua idade?"))
+        while(isNaN(idade)){
+            idade = Number(prompt("qual a sua idade?"))
+        }
+        idade >= 18? document.write("o usuário é maior de idade") : document.writeln("o usuário é menor de idade")
+    </script>
+</body>
+</html>

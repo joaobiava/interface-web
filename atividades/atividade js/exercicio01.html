@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = Number(prompt("insira o primeiro numero"))
+        let n2 = Number(prompt("insira o segundo numero"))
+        if(isNaN(n1) || isNaN(n2)){
+            n1 = parseFloat(prompt("insira o primeiro numero"))
+            n2 = parseFloat(prompt("insira o segundo numero"))
+        }
+        document.write(`soma: ${n1 + n2} <br>`)
+        document.write(`subtração: ${n1 - n2} <br>`)
+        document.write(`multiplicação: ${n1 * n2} <br>`)
+        document.write(`divisão: ${n1 / n2} <br>`)
+        document.write(`resto da divisão: ${n1 % n2} <br>`)
+    </script>
+</body>
+</html>
