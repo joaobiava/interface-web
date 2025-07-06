@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/arquivosCSS/header-footer.css">
+    <link rel="stylesheet" href="/arquivosCSS/cores.css">
+    <link rel="stylesheet" href="/arquivosCSS/signup.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../imagens/logo.png" alt="imagem-logo" class="logo"></a>
+        <ul class="itens-header">
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#assinaturas">Assinaturas</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+        <ul class="itens-header">
+            <li><a href=""><img src="/imagens/pesquisar_icon.png" alt="pesquisar"></a></li>
+            <li><a href="login.html"><img src="/imagens/profile_icon.png" alt="profile"></a></li>
+            <li><a href=""><img src="/imagens/carrinho-de-compras.png" alt="carrinho"></a></li>
+            <li><button id="toggle-theme" class="toggle-theme" aria-label="Alternar tema"><span class="icon">🌙</span></button></li>
+        </ul>
+    </header>
+
+    <div class="signup-container">
+        <h1>Sign up</h1>
+        <form id="form-signup" action="/arquivosHTML/index.html" method="">
+            <div class="form-group">
+                <label for="text">Nome</label>
+                <input id="nome" type="text" name="nome" required placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" type="text" name="sobrenome" required placeholder="Digite seu sobrenome">
+            </div>
+            <div class="form-group">
+                <label for="data">Data de nascimento</label>
+                <input id="data" type="date" name="dataNascimento" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" required placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" name="senha" required placeholder="Digite sua senha">
+            </div>
+            <button type="submit" class="signup-btn">Cadastrar</button>
+        </form>
+        <div class="links">
+            já possui uma conta,<a href="login.html">Entrar</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("form-signup").addEventListener("submit", function(event) {
+            event.preventDefault(); // impede o envio imediato
+
+            const nome = document.getElementById("nome").value;
+            const sobrenome = document.getElementById("sobrenome").value;
+            const data = document.getElementById("data").value;
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            // Expressão regular para validar e-mail simples
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (email === "" || senha === "" || nome === "" || sobrenome === "" || data === "") {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+
+            if (!emailRegex.test(email)) {
+                alert("Por favor, insira um e-mail válido.");
+                return;
+            }
+
+            if (senha.length < 6) {
+                alert("A senha deve ter no mínimo 6 caracteres.");
+                return;
+            }
+
+            // Se passou todas as validações, pode redirecionar
+            alert("Login bem-sucedido!");
+            window.location.href = "/arquivosHTML/index.html"; // redireciona para a página principal
+        });
+    </script>
+
+    <script src="../arquivosJS/switch_black_white.js"></script>
+</body>
+</html>

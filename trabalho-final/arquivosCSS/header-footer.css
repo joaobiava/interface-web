@@ -1,0 +1,120 @@
+/* HEADER GERAL */
+header {
+    position: sticky;
+    top: 0; /* Isso é ESSENCIAL para o sticky funcionar */
+    left: 0;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header_color);
+    box-shadow: 5px 5px 20px -5px #000; /* Sombra opcional para efeito de elevação */
+}
+.logo{
+    max-width: 7vw;
+    height: auto;
+}
+.itens-header{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1.6em;
+}
+.itens-header li img{
+    max-height: 10vh;
+}
+.itens-header a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text_color);
+}
+
+/* FOOTER GERAL */
+footer {
+    background-color: var(--header_color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/*HOVER*/
+.itens-header a:hover{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+/**/
+
+/* Botão de menu para mobile */
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+/* Menu geral mobile (nav) */
+.menu-mobile {
+    display: flex;
+    gap: 1em;
+}
+
+.toggle-theme {
+  background-color: var(--background_color);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-theme:hover {
+  transform: scale(1.1);
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 30vw;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-mobile {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--header_color);
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .menu-mobile.show {
+        display: flex;
+    }
+
+    .itens-header {
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em 0;
+    }
+
+    .itens-header a {
+        font-size: 1.2rem;
+    }
+
+    .itens-header li img {
+        height: 40px;
+    }
+}

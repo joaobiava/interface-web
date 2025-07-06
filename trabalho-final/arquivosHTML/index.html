@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero café</title>
+    <link rel="stylesheet" href="../arquivosCSS/header-footer.css">
+    <link rel="stylesheet" href="../arquivosCSS/style.css">
+    <link rel="stylesheet" href="../arquivosCSS/assinaturas.css">
+    <link rel="stylesheet" href="../arquivosCSS/sobre.css">
+    <link rel="stylesheet" href="../arquivosCSS/depoimentos.css">
+    <link rel="stylesheet" href="/arquivosCSS/cores.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../imagens/logo.png" alt="imagem-logo" class="logo"></a>
+        <ul class="itens-header">
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#assinaturas">Assinaturas</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+        <ul class="itens-header">
+            <li><a href=""><img src="/imagens/pesquisar_icon.png" alt="pesquisar"></a></li>
+            <li><a href="login.html"><img src="/imagens/profile_icon.png" alt="profile"></a></li>
+            <li><a href=""><img src="/imagens/carrinho-de-compras.png" alt="carrinho"></a></li>
+            <li><button id="toggle-theme" class="toggle-theme" aria-label="Alternar tema"><span class="icon">🌙</span></button></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <h1>Descubra o sabor do café perfeito</h1>
+    </section>
+
+    <section class="main-section" id="produtos">
+        <h2>Nossos Cafés mais procurados</h2>
+        <div class="main-cards">
+            <div class="card">
+                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW_ID7ILIT6yUuffa6iq8LZ24yS1rRAtLBgw&s" alt=""></a>
+                <h3>Café do Cerrado Mineiro</h3>
+                <p>Notas de chocolate e castanhas. Perfeito para começar o dia.</p>
+                <div class="card-buttons">
+                    <a href="#">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+            <div class="card">
+                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW_ID7ILIT6yUuffa6iq8LZ24yS1rRAtLBgw&s" alt=""></a>
+                <h3>Café da Chapada Diamantina</h3>
+                <p>Equilibrado, com acidez cítrica. Ideal para métodos filtrados.</p>
+                <div class="card-buttons">
+                    <a href="#">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+            <div class="card">
+                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW_ID7ILIT6yUuffa6iq8LZ24yS1rRAtLBgw&s" alt=""></a>
+                <h3>Assinatura Mensal</h3>
+                <p>Receba cafés especiais na sua casa todos os meses.</p>
+                <div class="card-buttons">
+                    <a href="#">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="assinaturas" id="assinaturas">
+        <h1 class="main-title">Defina o seu plano</h1>
+        <section class="pricing">
+            <div class="pricing-plan">
+                <h2 class="class-plan__title">Básico</h2>
+                <p><span class="pricing-plan__price">R$ 19.99</span> /mês.</p>
+                <ul class="pricing-plan__features">
+                    <li>Cafés Básicos</li>
+                </ul>
+                <a href="#" class="pricing-plan__cta">Assine já</a>
+            </div>
+            <div class="pricing-plan">
+                <h2 class="class-plan__title">Intermediário</h2>
+                <p><span class="pricing-plan__price">R$ 39.99</span> /mês.</p>
+                <ul class="pricing-plan__features">
+                    <li>Cafés básicos-intermediários</li>
+                </ul>
+                <a href="#" class="pricing-plan__cta">Assine já</a>
+            </div>
+            <div class="pricing-plan">
+                <h2 class="class-plan__title">Avançado</h2>
+                <p><span class="pricing-plan__price">R$ 99.99</span> /mês.</p>
+                <ul class="pricing-plan__features">
+                    <li>Cafés intermediários-avançados</li>
+                </ul>
+                <a href="#" class="pricing-plan__cta">Assine já</a>
+            </div>
+        </section>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h2>Sobre Nós</h2>
+        <div class="sobre-container">
+            <div class="sobre-texto">
+                <p>Na <strong>Quero Café</strong>, acreditamos que o café é mais do que uma bebida — é uma experiência. Por isso, buscamos os melhores grãos das regiões mais renomadas do Brasil, como o Cerrado Mineiro e a Chapada Diamantina, para entregar qualidade, frescor e sabor em cada xícara.</p>
+                <p>Trabalhamos com produtores locais que seguem práticas sustentáveis e de comércio justo. Nosso objetivo é valorizar o pequeno produtor e proporcionar aos nossos clientes uma jornada única pelo universo do café especial.</p>
+                <p>Seja através da compra individual ou de nossos planos de assinatura, oferecemos curadoria, praticidade e a certeza de que você está saboreando o melhor do café brasileiro.</p>
+            </div>
+            <div class="sobre-imagem">
+                <img src="../imagens/teste.webp" alt="Colheita de café" />
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="depoimentos-container">
+            <div class="comentario">
+                <p>"Melhor café que já tomei! A entrega foi super rápida."</p>
+                <span>- Ana Paula, SP</span>
+            </div>
+            <div class="comentario">
+                <p>"A assinatura mensal é perfeita, sempre recebo um sabor diferente."</p>
+                <span>- João Marcos, MG</span>
+            </div>
+            <div class="comentario">
+                <p>"A assinatura mensal é perfeita, sempre recebo um sabor diferente."</p>
+                <span>- João Marcos, MG</span>
+            </div>
+            <div class="comentario">
+                <p>"A assinatura mensal é perfeita, sempre recebo um sabor diferente."</p>
+                <span>- João Marcos, MG</span>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Quero Café - Todos os direitos reservados.</p>
+    </footer>
+
+<script src="../arquivosJS/switch_black_white.js"></script>
+
+</body>
+</html>
